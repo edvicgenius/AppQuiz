@@ -1,0 +1,351 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#154360">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <ImageView
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            android:src="@drawable/quizzapp"/>
+
+    <TextView
+        android:layout_width="228dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Welcome to the Tech Quiz App"
+        android:textColor="#fff"
+        android:textSize="24dp" />
+</LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:ems="15"
+            android:gravity="center_vertical"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+
+        <TextView
+            android:id="@+id/questionOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/questionOne"
+            tools:layout_editor_absoluteX="24dp"
+            android:textColor="#fff"
+            tools:layout_editor_absoluteY="100dp" />
+
+        <RadioGroup
+            android:id="@+id/radioOne"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/questionOneA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="2000" />
+
+            <RadioButton
+                android:id="@+id/questionOneB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="2009" />
+
+            <RadioButton
+                android:id="@+id/questionOneC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="2010" />
+
+            <RadioButton
+                android:id="@+id/questionOneD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="2015" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <TextView
+        android:id="@+id/questionTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="2. Which country recently unveiled the worlds most powerful and smartest scientific supercomputer?"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="177dp" />
+
+        <RadioGroup
+            android:id="@+id/radioTwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/questionTwoA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="USA" />
+
+            <RadioButton
+                android:id="@+id/questionTwoB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="China" />
+
+            <RadioButton
+                android:id="@+id/questionTwoC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Singapore" />
+
+            <RadioButton
+                android:id="@+id/questionTwoD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Russia" />
+        </RadioGroup>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <TextView
+        android:id="@+id/questionThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="3. The Internet intelligence Map was recently introduced by ?"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+        <RadioGroup
+            android:id="@+id/radioThree"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/questionThreeA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Oracle" />
+
+            <RadioButton
+                android:id="@+id/questionThreeB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Google" />
+
+            <RadioButton
+                android:id="@+id/questionThreeC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Microsoft" />
+
+            <RadioButton
+                android:id="@+id/questionThreeD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="IBM" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <TextView
+        android:id="@+id/questionFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="4. Name any other cryptocurency that you know of, apart from bitcoin?"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+
+        <EditText
+            android:id="@+id/inputQuestionFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Answer"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <TextView
+        android:id="@+id/questionFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="5. What is the name of the new malware, that takes over electronic devices and makes them as bots?"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+        <RadioGroup
+            android:id="@+id/radioFive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/questionFiveA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Ransomware" />
+
+            <RadioButton
+                android:id="@+id/questionFiveB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Combo Jack malware" />
+
+            <RadioButton
+                android:id="@+id/questionFiveC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Saposhi" />
+
+            <RadioButton
+                android:id="@+id/questionFiveD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Xafecopy Trojan" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/questionSix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="6. Which is not a Java Keyword?"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="100dp" />
+
+        <CheckBox
+            android:id="@+id/answerBoolean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Boolean"/>
+        <CheckBox
+            android:id="@+id/answerEditable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Editable"/>
+        <CheckBox
+            android:id="@+id/answerBolean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Bolean"/>
+        <CheckBox
+            android:id="@+id/answerStringe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Stringe"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Answer"
+        android:onClick="submitButton"/>
+
+</LinearLayout>
+
+
+</ScrollView>
